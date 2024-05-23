@@ -25,4 +25,5 @@ const saveHighestScore = (e) => {
   getScores.splice(MAX_HIGHSCORES);
   console.log(getScores);
   localStorage.setItem("getScores", JSON.stringify(getScores));
+  return window.location.assign("/highscores.html");
 };
